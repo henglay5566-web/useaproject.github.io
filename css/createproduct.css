@@ -1,0 +1,199 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+  background-color: rgb(238, 238, 238);
+}
+.container{}
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.boxsha {
+  box-shadow: 0px 1px 5px rgb(160, 160, 160);
+}
+.headerleft {
+  font-size: 35px;
+  padding-top: 20px;
+  padding-left: 25px;
+  display: flex;
+  gap: 15px;
+}
+.headerright {
+  font-size: 35px;
+  padding-top: 20px;
+  padding-right: 25px;
+  display: flex;
+  gap: 15px;
+}
+.btn {
+  display: block;
+  background-color: royalblue;
+  padding: 5px 15px 5px 15px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border: 1px solid white;
+  font-weight: bold;
+  color: royalblue;
+}
+.btn:hover {
+  background-color: white;
+  color: royalblue;
+  border: 1px solid royalblue;
+  transition: 0.5s;
+
+}
+.page{
+  color: royalblue;
+}
+a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+}
+.header a:hover{
+    color: royalblue;
+    transition: 0.5s;
+}
+.header:hover {
+  color: royalblue;
+  transition: 0.2s;
+  font-size: 40px;
+  position: relative;
+  transition-delay: 1s;
+}
+.footer{
+  text-align: center;
+  background-color: rgb(225, 225, 225);
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 35px 35px 0px 0px;
+}
+.tableleft{
+    width: 50%;
+    height: 600px;
+    background-color: rgb(46, 18, 18);
+}
+.search{
+    margin-left: 55px;
+    padding-top: 20px;
+    width: 150px;
+   
+    display: flex;
+    font-size: 30px;
+}
+.add{
+  margin-top: 8px;
+  margin-left: 15px;
+}
+.input{
+    width: 600px;
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.productable{
+  width: 650px;
+  margin-top: 15px;
+  margin-left: 53px;
+  
+  
+}
+.productable th{
+  background-color: #3fc13f;
+  color: white;
+  height: 50px;
+}
+.productable td{
+  text-align: center;
+  color: black;
+  padding-top: 15px;
+  font-size: 20px;
+}
+.total-payable{
+  background-color: #3fc13f;
+  width:650px;
+  height: 50px;
+  margin-left: 53px;
+  text-align: center;
+  margin-top: 100px;
+  padding-top: 8px;
+  color: white;
+  font-size: 15px;
+}
+.tax{
+  
+  margin-top: 15px;
+  margin-left: 53px;
+  width: 180px;
+}
+.tax p{
+  display: flex;
+  color: blue;
+}
+.ss{
+  
+  display: flex;
+}
+.number{ 
+  margin-right:10px ;
+  height:30px ;
+  width: 150px;
+  border-radius: 5px;
+  border: 2px solid rgb(0, 0, 0);
+  padding-left: 4px;
+}
+.number ::placeholder{
+  color: white;
+}
+.bbtn{
+  border-radius: 10px;
+  margin-top: 15px;
+  width: 115px;
+  height: 35px;
+  background-color: beige;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  cursor: pointer;
+}
+.bbtn p{
+  margin-left: 5px;
+}
+.red{
+  background-color: red;
+  color: white;
+}
+.green{
+  background-color: #3fc13f;
+  color: white;
+  padding-left:16px ;
+}
+
+.yellow{
+  background-color: #FFEA00;
+  color: black;
+}
+.txt{
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.button{
+  margin-left: 52px;
+  display: flex;
+}
+.tableright{
+    width: 50%;
+    height: 600px;
+    background-color: rgb(255, 0, 0);
+    margin-left: 760px;
+    display: flex;
+}

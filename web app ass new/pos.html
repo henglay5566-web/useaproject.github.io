@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Css/pos.css">
+    <title>POS</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="../html/dashboard.html"><img src="img/logo.png" alt="" style="width:100px; height:90px; border-radius:50%; "></a>
+        <p class="blank"> </p>
+        <a href="../html/dashboard.html" class="dashboard">Dashboard</a>
+        <a href="" class="user"><i class="fa-solid fa-user"></i></a>
+    </div>
+    <div class="content">
+
+        <div class="right">
+            <br>
+            <div class="search">
+                <input type="text" placeholder="Search..."
+                    style="width: 90%; height: 25px; border-radius: 5px; border: 1px solid #ccc; padding: 5px; margin-left: 10px;">
+                <i class="fa-solid fa-user-plus"></i>
+            </div>
+            <table class="table">
+                <tr class="hat">
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>Spaghetti</td>
+                    <td>$7.00</td>
+                    <td>2</td>
+                    <td>$14.00</td>
+                </tr>
+                <tr>
+                    <td>Coke</td>
+                    <td>$0.75</td>
+                    <td>1</td>
+                    <td>$0.75</td>
+                </tr>
+                <tr>
+                    <td>Milk</td>
+                    <td>$3.00</td>
+                    <td>3</td>
+                    <td>$9.00</td>
+                </tr>
+            </table>
+            <div class="total">
+                <h3>Total Payable: $23.75</h3>
+            </div>
+            <div class="button">
+                <table class="checkout">
+                    <tr style="text-align: center;">
+                        <th>Tax</th>
+                        <th>Discount</th>
+                        <th>Shipping</th>
+                    </tr>
+                    <tr  style="text-align: center;">
+                        <td><input type="number" style="height: 23px;"><span class="tax"><strong>%</strong></span></td>
+                        <td><input type="number" style="height: 23px;"><span class="tax"><strong>$</strong></span></td>
+                        <td><input type="number" style="height: 23px;"><span class="tax"><strong>$</strong></span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="icon ">
+                <button class="icon red">
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                    Reset
+                </button>
+
+                <button class="icon green">
+                    <i class="fa-brands fa-paypal"></i>
+                    Pay Now
+                </button>
+
+                <button class="icon yellow">
+                    <i class="fa-solid fa-hourglass-half"></i>
+                    Draft
+                </button>
+            </div>
+        </div>
+        <div class="left">
+            <br>
+            <button id="openSidebarBtn" class="open-btn">List of Category</button>
+
+            
+            <div id="sidebar" class="sidebar">
+                <div class="sidebar-header">
+                    <h2>List Category</h2>
+                    <span id="closeSidebarBtn" class="close-btn">&times;</span>
+                </div>
+
+                <div class="side-list">
+                    <div class="side-item layer">
+                        <span class="icon"><i class="fa-solid fa-layer-group"></i></span>
+                        <p>All Category</p>
+                    </div>
+                    <div class="side-item burger">
+                        <span class="icon"><i class="fa-solid fa-burger"></i></span>
+                        <p>Fast Foods</p>
+                    </div>
+                    <div class="side-item beer">
+                        <span class="icon"><i class="fa-solid fa-beer-mug-empty"></i></span>
+                        <p>Hard Drink</p>
+                    </div>
+                    <div class="side-item water">
+                        <span class="icon"><i class="fa-solid fa-bottle-water"></i></span>
+                        <p>Soft Drink</p>
+                    </div>
+                </div>
+                <div class="buttom">
+                    <div class="nm" style="background-color: #f2f2f2;"><i class="fa-solid fa-arrow-left"
+                            style="margin: 12px; margin-left: 10px;"></i></div>
+                    <div class="nm one">
+                        <p style="margin: 10px; margin-left: 15px;">1</p>
+                    </div>
+                    <div class="nm two">
+                        <p style="margin: 10px; margin-left: 15px;">2</p>
+                    </div>
+                    <div class="nm"><i class="fa-solid fa-arrow-right" style="margin: 10px; margin-left: 10px;"></i>
+                    </div>
+                </div>
+            </div>
+            <script src="js/script.js"></script>
+            <p class="txt ">Scan/Search Product by Code or name</p>
+            <div class="photo">
+                <div class="pt"><img src="img/food.jpg" alt="">
+                    <h3>Spaghetti</h3>
+                    <p class="price">$7.00</p>
+                </div>
+                <div class="pt"><img src="img/coke.jpg" alt="">
+                    <h3>Coke</h3>
+                    <p class="price">$0.75</p>
+                </div>
+                <div class="pt"><img src="img/milk.jpg" alt="">
+                    <h3>Milk</h3>
+                    <p class="price">$3.00</p>
+                </div>
+                <div class="pt"><img src="img/steak.jpg" alt="">
+                    <h3>steak</h3>
+                    <p class="price">$8.50</p>
+                </div>
+                <div class="pt"><img src="img/burgar.jpg" alt="">
+                    <h3>Burger</h3>
+                    <p class="price">$3.75</p>
+                </div>
+                <div class="pt"><img src="img/cocktail.jpg" alt="">
+                    <h3>Coketail</h3>
+                    <p class="price">$3.00</p>
+                </div>
+            </div>
+            <div class="buttom">
+                <div class="nm" style="background-color: #f2f2f2;"><i class="fa-solid fa-arrow-left"
+                        style="margin: 12px; margin-left: 10px;"></i></div>
+                <div class="nm one">
+                    <p style="margin: 10px; margin-left: 15px;">1</p>
+                </div>
+                <div class="nm two">
+                    <p style="margin: 10px; margin-left: 15px;">2</p>
+                </div>
+                <div class="nm"><i class="fa-solid fa-arrow-right" style="margin: 10px; margin-left: 10px;"></i></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
